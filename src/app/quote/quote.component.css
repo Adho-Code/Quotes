@@ -1,0 +1,10 @@
+h1{
+    text-transform: capitalize;
+text-shadow: 1px 1px 5px black;
+color: #987;
+text-align: center;
+}
+
+.card{
+    margin:auto;
+}
