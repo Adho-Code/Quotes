@@ -1,10 +1,32 @@
-h1{
-    text-transform: capitalize;
-text-shadow: 1px 1px 5px black;
-color: #987;
-text-align: center;
+#quotes{
+    border: 1px solid black;
+    padding:25px;
+    border-radius:20px;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+/* #intro{
+    background-image:url("https://mcdn.wallpapersafari.com/medium/48/10/ecMKBZ.jpg")
+    background-repeat; no-repeat
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+
+} */
+#inspire:hover{
+    background-color:rgb(247,242,242,0.7)
+}
+#cool{
+   background-color:#4CAF50;
+   border: none;
+   color:white;
+   padding:20px;
+   text-align: center;
+   text-decoration:none;
+   display:inline-block;
+   font-size:16px;
+   margin:4px 2px;
+   cursor:pointer;
 }
 
-.card{
-    margin:auto;
-}

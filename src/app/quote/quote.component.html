@@ -1,28 +1,29 @@
-<h1>My Quotes</h1>
-<h1> Welcome to Inspirational Quotes</h1>
-<hr>
-<div class="container">
-  <div class="row">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+<!--<app-quote-form>(addQuotes)="addNewQuotes($event)"</app-quote-form>-->
+<div class="container-fluid">
+
+  <div id="intro">
+      <h1> Welcome to Inspirational Quotes</h1>
+      <h2>Encouraging people to work towards there Dreams</h2>
+      <button id="cool">The Best Quotes</button>
+      <button id="motiv">Motivational Quotes</button>
+      <button id="all">All Quotes</button>
   </div>
+</div>
+<!--<app-quote-form(addQuotes)="addNewQuotes($event)"></app-quote-form>-->
 
-  <div class="container">
-    <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-      <div class="row">
-        <h4 id="{{i}}"appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase</h4>
-          <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
+<div id="show">
+  <div class="row">
+  <div class="col3 inner-left">
 
-      </div>
-      
-         <div class="row" *ngIf="quote.showDescription"><app-quote-details [quote]='quote' (isComplete)='quoteDelete($event,i)'></app-quote-details>
-      </div>
-
-
+    <h3 id="quo"The Best Quotes></h3>
+    <div *ngFor="let quote of quotes;let i = 'index'">
+      <ul id="inspire">
+        <li>{{quote.publisher}} posted on {{quote.completeDate|date}}</li>
+        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+      </ul>
     </div>
   </div>
-
-
+  </div>
 </div>
 
-  
-<p *ngIf='quotes.length > 5'>Inspiration Quotes</p>
+

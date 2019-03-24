@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { Quotes } from '../quotes';
+import { Quote } from '../quotes';
 
 @Component({
   selector: 'app-quote',
@@ -7,19 +7,22 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quote.component.css']
 })
 export class Quotecomponent implements OnInit {
-
+   
      quotes = [
-      new Quotes(1,'Be the change that you wish to see in the world','Be yourself',new Date(2019,3,11)),
-      new Quotes(1,'No one can make you feel inferior without your consent.','Be yourself,everyone is already taken',new Date(2019,12.10)),
-      new Quotes(3,'It is never too late to be what you might have been','Never give up on something that you desire in life',new Date(2019,4,9)),
+      new Quote(1,'Chuu Galgallo','Elizabeth Mwangi Robert','Be the change that you wish to see in the world',new Date(2019,3,11)),
+      new Quote(1,'Peter Munya','Karungi Ochieng','No one can make you feel inferior without your consent.',new Date(2019,12.10)),
+      new Quote(3,'Joseph Kariuki','Dinah Gitonga','It is never too late to be what you might have been',new Date(2019,4,9)),
     ]
 
+    addNewQuote(quote){
+      let quoteLength = this.quotes.length;
+      quote.id = quoteLength + 1;
+      this.quotes.push(quote)
+    }
 
-
-    quoteDelete(isComplete,index){
+   deleteQuote(isComplete,index){
       if (isComplete){
-        let toDelete=confirm(`Do you want to delete ${this.quotes[index].name}`)
-
+        let toDelete=confirm(`Do you want to delete ${this.quotes[index].publisher}`)
         if(toDelete){
           this.quotes.splice(index,1)
 
@@ -28,21 +31,12 @@ export class Quotecomponent implements OnInit {
       }
 
     }
-  addNewQuote(quote){
-    let quoteLength = this.quotes.length;
-    quote.id=quoteLength+1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quotes.push(quote)
-  }
-    toogleDetails(index){
-      this.quotes[index].showDescription = 
-      !this.quotes[index].showDescription;
-    }
-
+  
     constructor(){ }
-    ngOnInit(){
+
+    ngOnInit(){ }
 
     }
 
-    }
+    
     
