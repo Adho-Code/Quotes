@@ -4,11 +4,4 @@ button{
     color: white;
 }
 
-    button:hover{
-          opacity:0.8;
-    }
-
-    .plus{
-        background-color:#6342;
-        width: 50%;
-    }
+    
