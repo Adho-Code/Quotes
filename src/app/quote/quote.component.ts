@@ -7,6 +7,8 @@ import { Quote } from '../quotes';
   styleUrls: ['./quote.component.css']
 })
 export class Quotecomponent implements OnInit {
+   public show:boolean = false;
+   public buttonName:any = 'show';
    
      quotes = [
       new Quote(1,'Chuu Galgallo','Elizabeth Mwangi Robert','Be the change that you wish to see in the world',new Date(2019,3,11)),

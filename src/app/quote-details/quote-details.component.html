@@ -1,12 +1,11 @@
-<p>{{quote.description}}</p>
+<p>{{quote.quote}}</p>
 <p>{{quote.author}}</p>
-<p>Posted {{quote.completeDate|dateCount}} days</p>
-
+<p>Posted {{quote.completeDate|dateCount}} hours ago</p>
 <button class="btn btn-outline-danger btn-sm" (click) = 'quoteDelete(true)'> Delete Quote </button>
 <br>
 <br>
 <div class="buttons">
   <button class="btn btn-outline-primary btn-sm" (click) = 'like quote()'>upvote {{upvote}}</button>
-  <button id="check"class="btn btn-outline-danger btn-sm" (click) = 'unlike()'>down vote {{downvote}}</button>
+  <button id="three"class="btn btn-outline-danger btn-sm" (click) = 'unlike()'>down vote {{downvote}}</button>
 
 </div>

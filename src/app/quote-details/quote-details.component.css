@@ -1,7 +1,8 @@
-button{
-    padding: 10px;
-    background-color: red;
-    color: white;
+buttons{
+    padding: 20px;
+}
+#three{
+    margin-left: 20px;
 }
 
     

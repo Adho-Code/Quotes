@@ -1,29 +1,34 @@
 <!--<app-quote-form>(addQuotes)="addNewQuotes($event)"</app-quote-form>-->
 <div class="container-fluid">
 
-  <div id="intro">
-      <h1> Welcome to Inspirational Quotes</h1>
-      <h2>Encouraging people to work towards there Dreams</h2>
-      <button id="cool">The Best Quotes</button>
-      <button id="motiv">Motivational Quotes</button>
-      <button id="all">All Quotes</button>
+
+  <div id="home">
+    <h2> Welcome to Inspirational Quotes</h2>
+    <h5>Encouraging people to work towards there Dreams</h5>
+    <button id="one">The Best Quotes</button>
+    <button id="two">Motivational Quotes</button>
+    <button id="three">All Quotes</button>
   </div>
 </div>
-<!--<app-quote-form(addQuotes)="addNewQuotes($event)"></app-quote-form>-->
+<app-quote-form(addQuote)="addNewQuote($event)"></app-quote-form>
 
-<div id="show">
-  <div class="row">
-  <div class="col3 inner-left">
-
-    <h3 id="quo"The Best Quotes></h3>
-    <div *ngFor="let quote of quotes;let i = 'index'">
-      <ul id="inspire">
-        <li>{{quote.publisher}} posted on {{quote.completeDate|date}}</li>
-        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-      </ul>
+  <div id="next">
+     <div class="row">
+    <div class="col4 inner-left">
+      <h4 id="pad" The Best Quotes></h4>
     </div>
-  </div>
-  </div>
-</div>
+    <div *ngFor="let quote of quotes;let i = 'index'">
+    </div>
 
+  
+      <ul id="quotes">
 
+          <li>{{quote.publisher}} posted on {{quote.completeDate|date}}</li>
+          <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+        </ul>
+        
+      </div>
+    </div>
+    
+   
+   
