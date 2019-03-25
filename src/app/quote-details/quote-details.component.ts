@@ -16,13 +16,15 @@ export class QuoteDetailsComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
-  upvote = 0;
-  downvote = 0;
+  upvote:number = 0;
+  
   likequote() {
-    this.upvote = this.upvote + 1;
+    this.upvote+=1
   }
+  downvote:number = 0;
   unlike() {
-    this.downvote + 1;
+    this.downvote +=1
+    
   }
   constructor() { }
 
