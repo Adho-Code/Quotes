@@ -8,7 +8,7 @@ import {Quote} from '../quotes';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  
+
   @Input() quote:Quote;
   @Output() isComplete= new EventEmitter<boolean>();
 
@@ -18,7 +18,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   upvote = 0;
   downvote = 0;
-  like() {
+  likequote() {
     this.upvote = this.upvote + 1;
   }
   unlike() {

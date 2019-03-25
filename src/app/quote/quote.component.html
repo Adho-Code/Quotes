@@ -10,7 +10,7 @@
     <button id="three">All Quotes</button>
   </div>
 </div>
-<app-quote-form(addQuote)="addNewQuote($event)"></app-quote-form>
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
   <div id="next">
      <div class="row">
@@ -18,7 +18,7 @@
       <h4 id="pad" The Best Quotes></h4>
     </div>
     <div *ngFor="let quote of quotes;let i = 'index'">
-    </div>
+    
 
   
       <ul id="quotes">
@@ -26,7 +26,7 @@
           <li>{{quote.publisher}} posted on {{quote.completeDate|date}}</li>
           <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
         </ul>
-        
+      </div>
       </div>
     </div>
     
