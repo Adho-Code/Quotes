@@ -1,10 +1,34 @@
 # Quotes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+#Description
+This quotes are upvoted and downvoted to the person's decision when someone wants to add a new quote.Before adding make sure you fill in the details required.
 
 ## Development server
+To practice my Angular skills.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##Setup/Installation Requirements
+* Open your github account.
+* Search for my github account.
+* Search for project name repository(Quotes)
+* Find project from your account and edit.
+* You can also link this page:https://adhoadhi.github.io/Quotes/
+
+## Known Bugs
+ Currently there are no error but you are free to point out any errors concerned.
+
+ ## Technology Used
+ * HTML
+ * JAVASCRIPTS
+ * CSS
+ * ANGULAR CLI
+
+ ## Support and contacts details
+ EmailAddress: adhoadhigal@gmail.com
+ Phone Number: +254 748393309
+
+ ## License
+
+ MIT Lisense
+ copyright (c) 2019 Adho Galgallo
 
 ## Code scaffolding
 
