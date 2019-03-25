@@ -7,7 +7,7 @@
 
 }
 #home{
-    /* background-image:url("https://mcdn.wallpapersafari.com/medium/48/10/ecMKBZ.jpg") */
+   background-color: azure;
     background-repeat:no-repeat;
     background-size: cover;
     padding: 20px;
@@ -72,7 +72,7 @@
     text-align:center;
 
 }
-#home h2,h5 {
-  font-family:'Amatic SC' ,cursive;
+h2 {
+  color: black;
 }
 
